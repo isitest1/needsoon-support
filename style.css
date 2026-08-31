@@ -49,6 +49,18 @@ img { max-width: 100%; display: block; }
 }
 .hero h1 { font-size: 34px; font-weight: 800; letter-spacing: -.5px; margin-bottom: 12px; }
 .hero p { font-size: 17px; max-width: 620px; margin: 0 auto; opacity: .96; }
+.hero .btn {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 13px 30px;
+    background: #fff;
+    color: var(--navy);
+    font-weight: 800;
+    font-size: 15px;
+    border-radius: 999px;
+    text-decoration: none;
+}
+.hero .btn:hover { background: var(--amber); color: #fff; }
 
 /* Layout */
 main { max-width: 900px; margin: 0 auto; padding: 40px 20px 80px; }
