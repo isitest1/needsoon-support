@@ -42,8 +42,13 @@ body {
   overflow-x: hidden;
   font-feature-settings: "palt" 0;
 }
-:lang(ja) { line-break: strict; }
-:lang(ja) :is(h1, h2, h3, .insight-quote, .flow-words, summary, .lead) { word-break: auto-phrase; }
+/* Japanese: break only at BudouX phrase boundaries (<wbr>), works in Safari too */
+:lang(ja) { line-break: strict; word-break: keep-all; overflow-wrap: break-word; }
+:is(h1, h2, h3, summary, .insight-quote, .lead, .flow-words li, .steps strong, .feature-list strong, .pledge strong) { text-wrap: balance; }
+p, li, dd, figcaption, .acc-body { text-wrap: pretty; }
+.nav a, .btn-store, .dock a, .qr-badge, .store-meta li, .lock-row span, .split-demo span, .hero-steps span { white-space: nowrap; }
+.compare-col li, .siri-bubble, .pill-list li, .split-demo, .demo-title, .contact-card h2, .site-footer p { text-wrap: balance; }
+.contact-card a.mail { overflow-wrap: normal; white-space: normal; }
 [hidden] { display: none !important; }
 img, svg, video { display: block; max-width: 100%; }
 img { height: auto; }
@@ -81,7 +86,8 @@ body::before {
   letter-spacing: -.028em;
   font-variation-settings: "opsz" 96;
 }
-:lang(ja) .display { font-weight: 900; letter-spacing: -.04em; line-height: 1.14; font-feature-settings: "palt" 1; font-size: clamp(44px, 5.5vw, 84px); }
+:lang(ja) .display { font-weight: 900; letter-spacing: -.04em; line-height: 1.14; font-feature-settings: "palt" 1; font-size: clamp(34px, 11.2vw, 84px); }
+@media (min-width: 901px) { :lang(ja) .hero .display { font-size: clamp(44px, 5.5vw, 84px); } }
 .hero h1 .line { white-space: nowrap; }
 .h2 {
   font-family: var(--font-display); font-weight: 800;
@@ -563,3 +569,12 @@ body::before {
 :lang(en) .hero h1 .line { white-space: normal; }
 .legal .lead { max-width: none; margin: 18px 0 8px; }
 :lang(en) .flow-words li { letter-spacing: -.03em; }
+
+/* line-break polish */
+.guide-aside .h2 { font-size: clamp(34px, 3.8vw, 56px); }
+.legal h1.h2 { font-size: clamp(30px, 8.4vw, 64px); }
+.site-footer h2, .legal .summary strong { white-space: nowrap; }
+.legal .summary strong, .legal h3 { text-wrap: balance; }
+@media (max-width: 380px) { .contact-card a.mail { font-size: 14.5px; padding: 13px 16px; } }
+.hero-bottle { z-index: 2; }
+@media (min-width: 901px) and (max-width: 1180px) { .hero-bottle { width: 36%; left: -6%; } }
