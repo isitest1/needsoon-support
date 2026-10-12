@@ -1,172 +1,592 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NeedSoon — Help &amp; Support</title>
-<meta name="description" content="How to use NeedSoon: add the moment you notice, by voice, barcode, or photo; share with family by QR — no account needed.">
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NeedSoon — Shared Shopping List App, No Account Needed (iPhone &amp; Apple Watch)</title>
+<meta name="description" content="NeedSoon is the shopping list you add to the moment you notice you're running low—in about 3 seconds. Share with family by showing a QR code: no account, no email. Add by voice, barcode, label photo, widget, Siri, or Apple Watch. Free.">
+<link rel="canonical" href="https://needsoon.margheritaworks.com/en.html">
+<link rel="alternate" hreflang="ja" href="https://needsoon.margheritaworks.com/">
+<link rel="alternate" hreflang="en" href="https://needsoon.margheritaworks.com/en.html">
+<link rel="alternate" hreflang="x-default" href="https://needsoon.margheritaworks.com/en.html">
+<meta name="theme-color" content="#F5F0EA">
+<meta name="apple-itunes-app" content="app-id=6792124859">
+<meta name="format-detection" content="telephone=no">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NeedSoon / ないかも">
+<meta property="og:title" content="NeedSoon — Add it in 3 seconds. Share it with a QR code.">
+<meta property="og:description" content="A shopping list for the moment you notice. Family sharing with no account or email—just show a QR code. Voice, barcode, widget, Siri, and Apple Watch.">
+<meta property="og:url" content="https://needsoon.margheritaworks.com/en.html">
+<meta property="og:image" content="https://needsoon.margheritaworks.com/assets/img/og-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="NeedSoon — Add it the moment you notice.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Inter:wght@400;600;700&display=swap">
+<link rel="preload" as="image" href="assets/img/en-1-720.webp" type="image/webp">
+<link rel="stylesheet" href="assets/css/site.css?v=4">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://needsoon.margheritaworks.com/#org",
+      "name": "Margherita Works",
+      "email": "support@margheritaworks.com",
+      "founder": { "@type": "Person", "name": "Kohei Ishikawa" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://needsoon.margheritaworks.com/#website",
+      "url": "https://needsoon.margheritaworks.com/",
+      "name": "NeedSoon / ないかも",
+      "inLanguage": ["ja", "en"],
+      "publisher": { "@id": "https://needsoon.margheritaworks.com/#org" }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://needsoon.margheritaworks.com/en.html#app",
+      "name": "NeedSoon",
+      "alternateName": ["ないかも", "Shopping List: Never Forget"],
+      "description": "A shared shopping list you add to the moment you notice you're running low. Family sharing with no account—just a QR code. Add by voice, barcode, label photo, widget, Siri, or Apple Watch.",
+      "operatingSystem": "iOS 18.0 or later, iPadOS 18.0 or later, watchOS",
+      "applicationCategory": "ShoppingApplication",
+      "inLanguage": ["en", "ja"],
+      "url": "https://needsoon.margheritaworks.com/en.html",
+      "downloadUrl": "https://apps.apple.com/app/id6792124859",
+      "installUrl": "https://apps.apple.com/app/id6792124859",
+      "image": "https://needsoon.margheritaworks.com/assets/img/icon-512.png",
+      "screenshot": [
+        "https://needsoon.margheritaworks.com/assets/img/en-1-720.webp",
+        "https://needsoon.margheritaworks.com/assets/img/en-2-720.webp",
+        "https://needsoon.margheritaworks.com/assets/img/en-5-720.webp"
+      ],
+      "featureList": "Instant add, recent and frequent suggestions, multi-item voice input, barcode scanning, on-device label text recognition, Home Screen and Lock Screen widgets, Control Center, Siri, Apple Watch, account-free QR family sharing, sort by aisle, store, or person, works offline",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "publisher": { "@id": "https://needsoon.margheritaworks.com/#org" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://needsoon.margheritaworks.com/en.html#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Do I need an account to share a shopping list with my family or partner?", "acceptedAnswer": { "@type": "Answer", "text": "No. There is no sign-up and no email address. Create a family to show a QR code; anyone who scans it shares the same shopping list." } },
+        { "@type": "Question", "name": "Is NeedSoon free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Download it free from the App Store and start right away." } },
+        { "@type": "Question", "name": "Does it work offline?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Adding, editing, and checking off items all work offline. Family sharing syncs when you're back online or open the app." } },
+        { "@type": "Question", "name": "Does it work on Apple Watch?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The Apple Watch app is included with the iPhone app. You can view your list, add items by voice or text, and check items off from your wrist." } },
+        { "@type": "Question", "name": "What if a scanned barcode isn't found?", "acceptedAnswer": { "@type": "Answer", "text": "Just type the item name and add it. Store-specific codes that can't be looked up show “Product not found” and switch to manual entry." } },
+        { "@type": "Question", "name": "How do I delete my data?", "acceptedAnswer": { "@type": "Answer", "text": "Delete items in the app. To stop sharing, choose “Leave this family.” Deleting the app removes the data on that device. Contact us to delete shared data." } }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
 <header class="site-header">
-  <div class="inner">
-    <a class="brand" href="en.html">NeedSoon<span> / ないかも</span></a>
-    <nav class="nav">
-      <a href="en.html">Help</a>
-      <a href="index.html">日本語</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="#contact">Contact</a>
+  <div class="wrap bar">
+    <a class="brand" href="en.html" aria-label="NeedSoon home">
+      <img src="assets/img/icon-192.png" alt="" width="34" height="34">NeedSoon<em lang="ja">ないかも</em>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#why">Why</a>
+      <a href="#entries">Ways to add</a>
+      <a href="#family">Family sharing</a>
+      <a href="#guide">Guide</a>
+      <a href="#faq">FAQ</a>
+      <a class="lang" href="/" hreflang="ja" lang="ja">日本語</a>
+      <a class="nav-cta" href="https://apps.apple.com/app/id6792124859">Get it free</a>
     </nav>
   </div>
 </header>
 
-<div class="hero">
-  <h1>Add it the moment you notice.</h1>
-  <p>NeedSoon is a shopping list for the moment you notice you're running low — so you can add it before you forget. This page explains how to use it.</p>
-  <p><a class="btn" href="https://apps.apple.com/jp/app/id6792124859">View on the App Store ↗</a></p>
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow reveal">Shopping list for iPhone, iPad &amp; Apple Watch</p>
+      <h1 id="hero-title" class="display reveal" style="--d:.08s">
+        <span class="line"><span class="in-line">Notice it.</span></span>
+        <span class="line"><span class="in-line">Add it in <span class="mark">3&nbsp;seconds.</span></span></span>
+      </h1>
+      <p class="lead reveal" style="--d:.16s">“Out of milk?” Add it right there, in the fewest taps possible—before you forget. Share with family by <strong>just showing a QR code</strong>. No account, no email.</p>
+      <div class="reveal" style="--d:.24s">
+        <a class="btn-store" href="https://apps.apple.com/app/id6792124859">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M12 8v6m-2.6-2.6L12 14l2.6-2.6"/></svg>
+          <span><small>Free on the</small>App Store</span>
+        </a>
+        <ul class="store-meta">
+          <li>No account needed</li>
+          <li>iOS 18 or later</li>
+          <li>Works offline</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hero-stage" aria-hidden="true">
+      <svg class="bottle hero-bottle" viewBox="0 0 240 300">
+        <defs><clipPath id="clip-hero"><path d="M84 60V76Q84 90 72 96C50 108 44 126 44 150V252Q44 272 64 272H136Q156 272 156 252V150C156 126 150 108 128 96Q116 90 116 76V60Z"/></clipPath></defs>
+        <path d="M84 60V76Q84 90 72 96C50 108 44 126 44 150V252Q44 272 64 272H136Q156 272 156 252V150C156 126 150 108 128 96Q116 90 116 76V60Z" fill="#FBF8F4"/>
+        <g clip-path="url(#clip-hero)"><g class="liquid"><g class="wave"><path d="M-20 236q40-14 80 0t80 0 80 0 80 0 80 0V420H-20Z" fill="#5EC8C0"/></g></g></g>
+        <path d="M78 56V74Q78 84 68 90C44 104 36 124 36 150V252Q36 280 64 280H136Q164 280 164 252V150C164 124 156 104 132 90Q122 84 122 74V56" fill="none" stroke="#2D3B47" stroke-width="12" stroke-linejoin="round"/>
+        <rect x="66" y="24" width="68" height="36" rx="9" fill="#2D3B47"/>
+        <circle class="notice" cx="198" cy="40" r="20" fill="#E74C3C"/>
+        <g stroke="#2D3B47" stroke-width="9" stroke-linecap="round"><line class="ray" x1="182" y1="96" x2="208" y2="76"/><line class="ray" x1="186" y1="124" x2="216" y2="121"/><line class="ray" x1="182" y1="150" x2="208" y2="164"/></g>
+      </svg>
+      <div class="phone">
+        <img src="assets/img/en-1-720.webp" srcset="assets/img/en-1-420.webp 420w, assets/img/en-1-720.webp 720w, assets/img/en-1-1080.webp 1080w" sizes="(max-width: 520px) 58vw, 300px" width="720" height="1565" alt="">
+      </div>
+      <div class="toast">
+        <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+        Added “Milk”
+        <span class="undo">Undo</span>
+      </div>
+      <div class="hero-steps"><span>Notice</span><span>Add</span><span>Done</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <ul><li>Milk</li><li>Eggs</li><li>Laundry detergent</li><li>Tissues</li><li>Toilet paper</li><li>Bread</li><li>Coffee</li><li>Toothpaste</li><li>Shampoo</li><li>Rice</li><li>Butter</li><li>Dish soap</li></ul>
+    <ul><li>Milk</li><li>Eggs</li><li>Laundry detergent</li><li>Tissues</li><li>Toilet paper</li><li>Bread</li><li>Coffee</li><li>Toothpaste</li><li>Shampoo</li><li>Rice</li><li>Butter</li><li>Dish soap</li></ul>
+  </div>
 </div>
 
-<main>
-
-  <section>
-    <h2>Getting started</h2>
-    <p class="lead">The app has two screens: <strong>Add</strong> and <strong>List</strong>. Switch with the bottom tabs, or swipe from the left/right screen edges.</p>
-    <ul>
-      <li><strong>Add</strong> — capture an item the instant you think of it (shown first when you open the app).</li>
-      <li><strong>List</strong> — see your list and check items off as you shop.</li>
-    </ul>
-  </section>
-
-  <section id="add">
-    <h2>1. Add the moment you notice</h2>
-    <div class="feature">
-      <div class="shot"><img src="img/en-1.png" alt="Home screen"></div>
-      <div class="body">
-        <h3>Type or tap a suggestion</h3>
-        <p>Just type an item name in the Add screen. Duplicates are flagged instead of silently added.</p>
-        <ul>
-          <li>Re-add <strong>recent</strong> and <strong>frequent</strong> items with one tap.</li>
-          <li>After adding you'll see "Added …" with an instant <strong>Undo</strong>.</li>
-        </ul>
+<!-- ============ WHY ============ -->
+<section class="section" id="why" aria-labelledby="why-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">Why NeedSoon</p>
+      <h2 id="why-title" class="h2 reveal">Forgotten buys start with <span class="mark mark--amber">forgotten adds.</span></h2>
+    </div>
+    <div class="insight-grid">
+      <p class="insight-quote reveal">The problem doesn’t happen at the store. It happens at home.</p>
+      <div class="insight-body reveal" style="--d:.1s">
+        <p>You open the fridge: “We’re almost out of milk.” You reach for the refill: “Did we run out?” If you don’t note it right then, it’s gone by the time you reach the store.</p>
+        <p>Most shopping list apps are built for the shopping trip. NeedSoon is built for <strong>the second you notice</strong>—and we cut every step we could between that moment and a saved item.</p>
       </div>
     </div>
-  </section>
-
-  <section id="voice">
-    <h2>2. Add by voice, barcode, or photo</h2>
-    <div class="feature reverse">
-      <div class="shot"><img src="img/en-4.png" alt="Voice, scan, capture"></div>
-      <div class="body">
-        <h3>Three quick entries</h3>
-        <ul>
-          <li><strong>Voice</strong> — speak several at once ("milk and eggs" → 2 items); confirm and drop any you don't need.</li>
-          <li><strong>Scan</strong> — read a barcode to auto-fill the product name; switch to manual entry if not found.</li>
-          <li><strong>Capture</strong> — photograph the product label and the name is read on-device (no connection needed).</li>
-        </ul>
-        <p class="lead">Camera and microphone permissions are requested only the first time you use that feature.</p>
+    <div class="compare">
+      <div class="compare-col them reveal">
+        <h3>A typical list app <b>5</b></h3>
+        <ol><li>Find and open the app</li><li>Pick a list</li><li>Open the add screen</li><li>Fill in category and quantity</li><li>Save and close</li></ol>
+        <p class="foot">Somewhere in there, something else gets your attention.</p>
+      </div>
+      <div class="compare-col us reveal" style="--d:.1s">
+        <h3>NeedSoon <b>1</b></h3>
+        <ol><li>Type in the field you see first—or tap a suggestion</li></ol>
+        <p class="foot">No category, no quantity. It saves first; fix it only if you need to. From a widget or Siri, you don’t even open the app.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="entries">
-    <h2>3. Add without opening the app</h2>
-    <div class="feature">
-      <div class="shot"><img src="img/en-3.png" alt="Widget, Lock Screen, Apple Watch"></div>
-      <div class="body">
-        <h3>Widget, Lock Screen, Siri, Apple Watch</h3>
-        <ul>
-          <li><strong>Widget</strong> on the Home or Lock Screen with voice / scan / capture buttons.</li>
-          <li><strong>Control Center</strong> shortcut jumps straight to Add.</li>
-          <li><strong>Siri</strong> — say "add to NeedSoon" and answer the prompt.</li>
-          <li><strong>Apple Watch</strong> — add by voice/text and check items off from your paired Watch.</li>
-        </ul>
+<!-- ============ FLOW ============ -->
+<section class="flow" aria-labelledby="flow-title">
+  <div class="flow-sticky">
+    <div class="wrap flow-inner">
+      <h2 id="flow-title" class="sr-only">Notice. Add. Done.</h2>
+      <ol class="flow-words">
+        <li>Notice.</li>
+        <li>Add.</li>
+        <li>Done.</li>
+      </ol>
+      <div class="flow-captions">
+        <figure>
+          <span class="num">01 — NOTICE</span>
+          <p>You usually notice you’re running low at home, in the middle of something else. So adding it should only take a moment.</p>
+          <span class="chip"><i></i>Out of milk?</span>
+        </figure>
+        <figure>
+          <span class="num">02 — ADD</span>
+          <p>The first screen is a text field. Re-add recent items with one tap, or use your voice or a barcode.</p>
+          <span class="chip"><i style="background:var(--teal)"></i>Added “Milk”</span>
+        </figure>
+        <figure>
+          <span class="num">03 — DONE</span>
+          <p>No confirmation screens. Add it and get back to what you were doing—it’s already on your family’s list too.</p>
+          <span class="chip"><i style="background:#fff"></i>Now just buy it.</span>
+        </figure>
       </div>
     </div>
-  </section>
+    <div class="flow-progress" aria-hidden="true"><span></span></div>
+  </div>
+</section>
 
-  <section id="family">
-    <h2>4. Share with family by QR</h2>
-    <div class="feature reverse">
-      <div class="shot"><img src="img/en-2.png" alt="Family sharing by QR"></div>
-      <div class="body">
-        <h3>No account — just show a QR code</h3>
-        <p>Share one shopping list with your family. <strong>No account, no email address.</strong></p>
-        <ol style="margin-left:22px">
-          <li>Tap the <strong>family icon at the top-left</strong> of the List screen.</li>
-          <li>Choose <strong>Create family</strong> — a QR code appears.</li>
-          <li>On the other device, open the same screen and <strong>scan the QR</strong> to join.</li>
-        </ol>
-        <ul>
-          <li>Additions and purchases sync to everyone (on foreground / pull-to-refresh).</li>
-          <li>See who added and who bought each item, with <strong>names and photos</strong>.</li>
-          <li>The family name and the auto-delete period are shared across the family.</li>
-        </ul>
-        <div class="callout">To stop sharing, choose "Leave family" — that device returns to local-only.</div>
+<!-- ============ DEMO ============ -->
+<section class="section demo-section" id="try" aria-labelledby="try-title">
+  <div class="wrap demo-grid">
+    <div>
+      <div class="section-head">
+        <p class="eyebrow reveal">Try it</p>
+        <h2 id="try-title" class="h2 reveal">How fast can you add it?</h2>
+        <p class="lead reveal">This is the app’s Add screen, recreated in your browser. Type an item or tap a suggestion. Hit the voice button to watch “milk and eggs” become two items.</p>
       </div>
     </div>
-  </section>
-
-  <section id="shopping">
-    <h2>5. Stay on track while shopping</h2>
-    <div class="feature">
-      <div class="shot"><img src="img/en-5.png" alt="Sorting the list"></div>
-      <div class="body">
-        <ul>
-          <li><strong>Sort</strong> by added order, store aisle, store, or person.</li>
-          <li><strong>Check off</strong> with one tap — undo instantly if you slip.</li>
-          <li>Assign a planned <strong>store</strong> per item, or set several at once.</li>
-          <li>Purchased items tidy away and auto-delete after a set period (configurable).</li>
-        </ul>
+    <div class="demo reveal" data-demo
+      data-toast="Added “{name}”"
+      data-toast-many="Added {n} items"
+      data-dup="“{name}” is already on your list"
+      data-undone="Undone"
+      data-time="Added in {s} seconds."
+      data-time-tap="Added with one tap."
+      data-split-msg="Split what you said into {n} items."
+      data-src-text="Typed"
+      data-src-voice="Voice"
+      data-listening="Listening…"
+      data-voice-phrase="Milk and eggs"
+      data-split-re="\s+and\s+|,|&amp;">
+      <p class="demo-title"><img src="assets/img/icon-192.png" alt="" width="36" height="36">What do you need?</p>
+      <form class="demo-form" autocomplete="off">
+        <label class="sr-only" for="demo-input">Enter item name</label>
+        <input id="demo-input" type="text" placeholder="Enter item name" maxlength="40" enterkeyhint="done">
+        <button type="submit">Add</button>
+      </form>
+      <div class="demo-actions">
+        <button type="button" class="demo-voice"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></svg><span>Voice (demo)</span></button>
+      </div>
+      <p class="demo-label">RECENTLY ADDED</p>
+      <div class="demo-chips">
+        <button type="button" data-name="Milk">Milk</button>
+        <button type="button" data-name="Eggs">Eggs</button>
+        <button type="button" data-name="Laundry detergent">Laundry detergent</button>
+        <button type="button" data-name="Tissues">Tissues</button>
+        <button type="button" data-name="Bread">Bread</button>
+      </div>
+      <ul class="demo-list" aria-label="Added items"><li class="empty">Nothing yet.</li></ul>
+      <p class="demo-timer"></p>
+      <p class="sr-only" aria-live="polite"></p>
+      <div class="toast demo-toast" role="status">
+        <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+        <span class="msg"></span>
+        <button type="button" class="undo">Undo</button>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="settings">
-    <h2>6. Settings</h2>
-    <p class="lead">Open Settings from the top-right menu on the List screen.</p>
-    <ul>
-      <li><strong>Auto-delete purchased</strong>: 7–90 days / never (default 90; shared across family when sharing).</li>
-      <li><strong>Your character</strong>: an avatar (animal or photo) and name, shown as "who" when sharing.</li>
-      <li>Version info and a link to this support page.</li>
-    </ul>
-  </section>
-
-  <section id="faq">
-    <h2>FAQ</h2>
-    <div class="faq">
-      <details><summary>Do I need an account to share?</summary>
-        <p>No — and no email either. Family members join by scanning a QR code. Under the hood, devices that know the random family ID (the QR) sync the same list.</p></details>
-      <details><summary>Does it work offline?</summary>
-        <p>Yes. Adding, editing, and checking off work offline. Shared syncing happens when you're back online or when you open the app.</p></details>
-      <details><summary>Barcode not found / not readable</summary>
-        <p>You can always type the name manually and continue. Store-specific codes that aren't standard barcodes show "not found" and switch to manual entry.</p></details>
-      <details><summary>How do I delete my data?</summary>
-        <p>Swipe to delete individual items. To stop sharing, choose "Leave family." Deleting the app removes the data on that device.</p></details>
-      <details><summary>Is the Apple Watch app separate?</summary>
-        <p>No. It's included in the iPhone app and installs automatically on your paired Apple Watch. No separate purchase.</p></details>
+<!-- ============ ENTRIES ============ -->
+<section class="section" id="entries" aria-labelledby="entries-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">Ways to add</p>
+      <h2 id="entries-title" class="h2 reveal">Wherever you notice, that’s the way in.</h2>
+      <p class="lead reveal">Home Screen, Lock Screen, or your wrist. Add from wherever you are—without hunting for the app.</p>
     </div>
-  </section>
+    <div class="bento">
+      <article class="tile t-widget reveal">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2.5"/><rect x="13" y="3" width="8" height="8" rx="2.5"/><rect x="3" y="13" width="8" height="8" rx="2.5"/><rect x="13" y="13" width="8" height="8" rx="2.5"/></svg></span>
+        <h3 class="h3">Home Screen widget</h3>
+        <p>See how many items are left at a glance, and start adding with the voice, scan, or camera buttons.</p>
+        <div class="tile-media"><img src="assets/img/en-3-720.webp" srcset="assets/img/en-3-420.webp 420w, assets/img/en-3-720.webp 720w, assets/img/en-3-1080.webp 1080w" sizes="(max-width: 620px) 80vw, 340px" width="720" height="1565" loading="lazy" alt="The NeedSoon widget on an iPhone Home Screen, showing the item count and voice, scan, and camera buttons"></div>
+      </article>
+      <article class="tile ink t-watch reveal" style="--d:.06s">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="3.5"/><path d="M9 6l.6-3h4.8L15 6M9 18l.6 3h4.8L15 18"/></svg></span>
+        <h3 class="h3">Apple Watch</h3>
+        <p>Speak to your wrist to add. At the store, check items off as you go. It’s included with the iPhone app—nothing extra to install.</p>
+        <div class="watch"><img src="assets/img/en-watch.webp" width="416" height="496" loading="lazy" alt="NeedSoon on Apple Watch, with a speak-or-type add button above the list"></div>
+      </article>
+      <article class="tile teal t-voice reveal">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></svg></span>
+        <h3 class="h3">Say several at once</h3>
+        <p>What you say is split into separate items.</p>
+        <div class="split-demo"><span class="say">“Milk and eggs”</span><span class="arrow">→</span><span class="item">Milk</span><span class="item">Eggs</span></div>
+      </article>
+      <article class="tile t-scan reveal" style="--d:.06s">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16M8 9v6M11 9v6M14 9v6M17 9v6"/></svg></span>
+        <h3 class="h3">Barcode</h3>
+        <p>Scan a barcode to fill in the product name. Not found? It switches straight to typing.</p>
+        <div class="code-demo" aria-hidden="true"><div class="bars"></div></div>
+      </article>
+      <article class="tile amber t-label reveal" style="--d:.12s">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h1.8l1.5-2h4.4l1.5 2h1.8A2.5 2.5 0 0 1 20 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5z"/><circle cx="12" cy="13" r="3.5"/></svg></span>
+        <h3 class="h3">Just snap the label</h3>
+        <p>Threw away the barcode? Take a photo of the label. Text is read on your device and offered as suggestions—no connection needed.</p>
+      </article>
+      <article class="tile t-siri reveal">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 4v-4H6.5A2.5 2.5 0 0 1 4 13.5z"/></svg></span>
+        <h3 class="h3">Siri &amp; Spotlight</h3>
+        <p>Hands full? Just ask. Answer Siri’s follow-up and it’s on the list.</p>
+        <span class="siri-bubble">“Siri, add to NeedSoon”</span>
+      </article>
+      <article class="tile t-lock reveal" style="--d:.06s">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2.5"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10"/></svg></span>
+        <h3 class="h3">Lock Screen &amp; Control Center</h3>
+        <p>One tap to the add screen—before you even unlock your iPhone.</p>
+        <div class="lock-row"><span>Lock Screen widget</span><span>Control Center</span><span>Shortcuts</span></div>
+      </article>
+    </div>
+  </div>
+</section>
 
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>For bug reports, requests, or questions, email us. We reply in English or Japanese.</p>
-    <p>✉️ <a href="mailto:support@margheritaworks.com">support@margheritaworks.com</a></p>
-  </section>
+<!-- ============ FAMILY ============ -->
+<section class="section family" id="family" aria-labelledby="family-title">
+  <div class="wrap family-grid">
+    <div>
+      <div class="section-head" style="margin-bottom:0">
+        <p class="eyebrow reveal">Family sharing</p>
+        <h2 id="family-title" class="h2 reveal">Family sharing is <span style="color:var(--teal)">just a QR code.</span></h2>
+        <p class="lead reveal">No account. No email address. No invite links. Open the same screen, scan the QR, and you’re on the same shopping list.</p>
+      </div>
+      <ol class="steps">
+        <li class="reveal"><div><strong>Create a family</strong><span>Tap the family icon at the top left of your list.</span></div></li>
+        <li class="reveal" style="--d:.06s"><div><strong>Show the QR code</strong><span>Hold up the QR code that appears.</span></div></li>
+        <li class="reveal" style="--d:.12s"><div><strong>Scan to join</strong><span>Your family taps “Scan QR to join.” That’s it.</span></div></li>
+      </ol>
+      <ul class="pill-list reveal">
+        <li>Adds and purchases sync to everyone</li>
+        <li>See who added and who bought, with names and photos</li>
+        <li>Fewer double purchases</li>
+      </ul>
+      <p class="use-cases reveal">For couples, roommates, and anyone running errands for family.</p>
+    </div>
+    <div class="family-phones">
+      <div class="phone reveal"><img src="assets/img/en-2-720.webp" srcset="assets/img/en-2-420.webp 420w, assets/img/en-2-720.webp 720w, assets/img/en-2-1080.webp 1080w" sizes="270px" width="720" height="1565" loading="lazy" alt="The Share with family screen, showing a QR code to join below the family name"></div>
+      <div class="phone reveal" style="--d:.1s"><img src="assets/img/en-5-720.webp" srcset="assets/img/en-5-420.webp 420w, assets/img/en-5-720.webp 720w, assets/img/en-5-1080.webp 1080w" sizes="270px" width="720" height="1565" loading="lazy" alt="A family shopping list grouped by Drugstore and Supermarket, showing who added each item"></div>
+      <span class="qr-badge" aria-hidden="true">No account</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SHOP ============ -->
+<section class="section" id="shop" aria-labelledby="shop-title">
+  <div class="wrap shop-grid">
+    <div class="shop-phone phone reveal"><img src="assets/img/en-6-720.webp" srcset="assets/img/en-6-420.webp 420w, assets/img/en-6-720.webp 720w, assets/img/en-6-1080.webp 1080w" sizes="320px" width="720" height="1565" loading="lazy" alt="A shopping list mid-trip, with purchased items checked and struck through"></div>
+    <div>
+      <div class="section-head" style="margin-bottom:0">
+        <p class="eyebrow reveal">At the store</p>
+        <h2 id="shop-title" class="h2 reveal">Never lost in the aisles.</h2>
+        <p class="lead reveal">Glance with one hand, check off with the other. You never sort when adding—the list sorts itself when you shop.</p>
+      </div>
+      <ul class="feature-list">
+        <li class="reveal"><span class="k">01</span><div><strong>Sort by aisle, store, or person</strong><span>Aisle categories are guessed from the item name. Group by supermarket, drugstore, and more.</span></div></li>
+        <li class="reveal"><span class="k">02</span><div><strong>One tap to check off, one tap to undo</strong><span>Checked the wrong one? Tap again and it’s back.</span></div></li>
+        <li class="reveal"><span class="k">03</span><div><strong>Purchased items tidy themselves away</strong><span>Bought items collect at the bottom and clear automatically after a set period (adjustable in Settings).</span></div></li>
+        <li class="reveal"><span class="k">04</span><div><strong>Search, and set stores in bulk</strong><span>Even a long list stays easy to find your way around.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIFFERENCES ============ -->
+<section class="section diff" id="difference" aria-labelledby="diff-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">What’s different</p>
+      <h2 id="diff-title" class="h2 reveal">Not just another shopping list.</h2>
+    </div>
+    <ol class="diff-list">
+      <li class="reveal"><span class="n">01</span><h3 class="h3">Speed of adding comes first</h3><p>The first screen is a text field. Category, quantity, and store are never required, and there’s no confirmation screen before saving.</p></li>
+      <li class="reveal"><span class="n">02</span><h3 class="h3">Family sharing with no account</h3><p>No ID, password, or email. Share with a QR code—and if you don’t share, everything stays on your device as before.</p></li>
+      <li class="reveal"><span class="n">03</span><h3 class="h3">Add without opening the app</h3><p>Widgets, Lock Screen, Control Center, Siri, Spotlight, and Apple Watch. More ways in means fewer forgotten adds.</p></li>
+      <li class="reveal"><span class="n">04</span><h3 class="h3">Voice, barcode, and label photo</h3><p>“Milk and eggs” becomes two items. Barcodes fill in the name. No barcode? Snap the label and text is read on-device.</p></li>
+      <li class="reveal"><span class="n">05</span><h3 class="h3">Works quietly, even offline</h3><p>Add and check off without a connection. Without sharing, your data stays on your device. No tracking.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ PRIVACY PLEDGE ============ -->
+<section class="section" id="privacy" aria-labelledby="privacy-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">Peace of mind</p>
+      <h2 id="privacy-title" class="h2 reveal">A shopping list doesn’t need your personal data.</h2>
+    </div>
+    <div class="pledge">
+      <div class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/><path d="M3 3l18 18" stroke-linecap="round"/></svg><strong>No sign-up</strong><p>Use every feature without registering a name or email address.</p></div>
+      <div class="reveal" style="--d:.06s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10 18h4"/></svg><strong>On-device unless you share</strong><p>Your list is never sent anywhere unless you turn on family sharing.</p></div>
+      <div class="reveal" style="--d:.12s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/><path d="M3 3l18 18"/></svg><strong>No tracking</strong><p>No advertising or tracking SDKs are built in.</p></div>
+      <div class="reveal" style="--d:.18s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h1.8l1.5-2h4.4l1.5 2h1.8A2.5 2.5 0 0 1 20 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5z"/><circle cx="12" cy="13" r="3.5"/></svg><strong>Permissions only when needed</strong><p>Camera and microphone access is requested only when you choose that feature.</p></div>
+    </div>
+    <p class="reveal" style="margin-top:28px;color:var(--muted);font-size:15px">Read the full <a href="privacy.html#en">Privacy Policy</a>.</p>
+  </div>
+</section>
+
+<!-- ============ GUIDE ============ -->
+<section class="section" id="guide" aria-labelledby="guide-title" style="padding-top:0">
+  <div class="wrap guide">
+    <div class="guide-aside">
+      <p class="eyebrow reveal">Help &amp; support</p>
+      <h2 id="guide-title" class="h2 reveal" style="margin-top:20px">How to use NeedSoon</h2>
+      <p class="lead reveal" style="margin-top:18px">There are just two screens: Add and List. Switch with the tabs at the bottom, or swipe from the screen edge.</p>
+    </div>
+    <div>
+      <details class="acc" open>
+        <summary>Adding items</summary>
+        <div class="acc-body">
+          <p>Type an item name in the field on the Add screen—the first thing you see when you open the app.</p>
+          <ul>
+            <li>Re-add <strong>recent and frequent items</strong> with one tap.</li>
+            <li>After adding, you’ll see “Added ‘Milk’” with an <strong>Undo</strong> button.</li>
+            <li>If the same item is already on your list, NeedSoon tells you instead of adding a duplicate.</li>
+            <li>Tap an item to edit its name, quantity, notes, or the store you plan to buy it at.</li>
+          </ul>
+        </div>
+      </details>
+      <details class="acc">
+        <summary>Adding by voice, barcode, or label photo</summary>
+        <div class="acc-body">
+          <ul>
+            <li><strong>Voice</strong>: say several items at once and they’re split up (“milk and eggs” → 2 items). Deselect any you don’t want on the confirmation screen.</li>
+            <li><strong>Scan</strong>: scan a barcode to fill in the product name. If nothing is found, switch to typing.</li>
+            <li><strong>Capture</strong>: photograph a product label and text is recognized on your device as suggestions (no connection needed).</li>
+          </ul>
+          <p>Camera and microphone permission is requested only the first time you use those features. Every core feature works by typing if you decline.</p>
+        </div>
+      </details>
+      <details class="acc">
+        <summary>Adding from widgets, Siri, or Apple Watch</summary>
+        <div class="acc-body">
+          <ul>
+            <li><strong>Widgets</strong>: touch and hold the Home Screen or Lock Screen and add NeedSoon. Start with the voice, scan, or camera buttons.</li>
+            <li><strong>Control Center</strong>: add the control to open the add screen in one tap.</li>
+            <li><strong>Siri</strong>: say “Add to NeedSoon” and answer the follow-up question.</li>
+            <li><strong>Apple Watch</strong>: installs automatically on your paired Watch. Add by voice or text, and check items off from your list.</li>
+          </ul>
+        </div>
+      </details>
+      <details class="acc">
+        <summary>Sharing with family / leaving a family</summary>
+        <div class="acc-body">
+          <ol>
+            <li>On the List screen, tap the <strong>family icon at the top left</strong>.</li>
+            <li><strong>Create a family</strong> to show a QR code.</li>
+            <li>On the other device, open the same screen and choose <strong>Scan QR to join</strong>.</li>
+          </ol>
+          <p>Syncing happens when you open the app, pull to refresh, or make a change. The family name and the auto-delete period for purchased items are shared by everyone.</p>
+          <p>To stop sharing, choose “Leave this family.” That device returns to local-only use. Only show your QR code to people you trust.</p>
+        </div>
+      </details>
+      <details class="acc">
+        <summary>While shopping</summary>
+        <div class="acc-body">
+          <ul>
+            <li><strong>Sort</strong>: by date added, by aisle, by store, or by person.</li>
+            <li><strong>Check off</strong>: one tap when you buy it—tap again to undo.</li>
+            <li><strong>Stores</strong>: set a store for each item, or for many items at once.</li>
+          </ul>
+        </div>
+      </details>
+      <details class="acc">
+        <summary>Settings (auto-delete, character)</summary>
+        <div class="acc-body">
+          <ul>
+            <li><strong>Auto-delete purchased items</strong>: after 7–90 days, or never (default 90 days; shared across the family while sharing).</li>
+            <li><strong>Character</strong>: set your icon (an animal avatar or a photo) and name, shown as “who added” when sharing.</li>
+            <li>Open Settings from the menu at the top right of the List screen.</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq" aria-labelledby="faq-title" style="padding-top:0">
+  <div class="wrap guide">
+    <div class="guide-aside">
+      <p class="eyebrow reveal">FAQ</p>
+      <h2 id="faq-title" class="h2 reveal" style="margin-top:20px">Questions</h2>
+    </div>
+    <div>
+      <details class="acc"><summary>Do I need an account to share with my family or partner?</summary><div class="acc-body"><p>No. There’s no sign-up and no email address. Create a family to show a QR code; anyone who scans it shares the same shopping list. Behind the scenes, devices that know the same random family ID (the QR code) sync with each other.</p></div></details>
+      <details class="acc"><summary>Is NeedSoon free?</summary><div class="acc-body"><p>Yes. Download it free from the App Store and start right away.</p></div></details>
+      <details class="acc"><summary>Does it work offline?</summary><div class="acc-body"><p>Yes. Adding, editing, and checking off items all work offline. Family sharing syncs when you’re back online or open the app.</p></div></details>
+      <details class="acc"><summary>Do I need a separate Apple Watch app?</summary><div class="acc-body"><p>No. It’s included with the iPhone app and installs on your paired Apple Watch automatically. View your list, add by voice or text, and check items off.</p></div></details>
+      <details class="acc"><summary>A scanned barcode isn’t found</summary><div class="acc-body"><p>Type the item name and add it as usual. Store-specific codes that can’t be looked up show “Product not found” and switch to manual entry. Items without a barcode can also be added by label photo or voice.</p></div></details>
+      <details class="acc"><summary>Sharing doesn’t work on my work-managed iPhone</summary><div class="acc-body"><p>Syncing may fail on networks with restrictions. You can still add and check off items on the device. If it doesn’t improve, please contact us.</p></div></details>
+      <details class="acc"><summary>How do I delete my data?</summary><div class="acc-body"><p>Delete items in the app. To stop sharing, choose “Leave this family.” Deleting the app removes the data on that device. To delete shared data, contact us below.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA + CONTACT ============ -->
+<section class="section final" id="download" aria-labelledby="final-title">
+  <div class="wrap">
+    <svg class="bottle final-bottle noticed reveal" viewBox="0 0 240 300" aria-hidden="true">
+      <defs><clipPath id="clip-final"><path d="M84 60V76Q84 90 72 96C50 108 44 126 44 150V252Q44 272 64 272H136Q156 272 156 252V150C156 126 150 108 128 96Q116 90 116 76V60Z"/></clipPath></defs>
+      <path d="M84 60V76Q84 90 72 96C50 108 44 126 44 150V252Q44 272 64 272H136Q156 272 156 252V150C156 126 150 108 128 96Q116 90 116 76V60Z" fill="#FBF8F4"/>
+      <g clip-path="url(#clip-final)"><g class="wave"><path d="M-20 236q40-14 80 0t80 0 80 0 80 0 80 0V420H-20Z" fill="#2D3B47" opacity=".9"/></g></g>
+      <path d="M78 56V74Q78 84 68 90C44 104 36 124 36 150V252Q36 280 64 280H136Q164 280 164 252V150C164 124 156 104 132 90Q122 84 122 74V56" fill="none" stroke="#1F2A33" stroke-width="12" stroke-linejoin="round"/>
+      <rect x="66" y="24" width="68" height="36" rx="9" fill="#1F2A33"/>
+      <circle class="notice" cx="198" cy="40" r="20" fill="#E74C3C"/>
+      <g stroke="#1F2A33" stroke-width="9" stroke-linecap="round"><line class="ray" x1="182" y1="96" x2="208" y2="76"/><line class="ray" x1="186" y1="124" x2="216" y2="121"/><line class="ray" x1="182" y1="150" x2="208" y2="164"/></g>
+    </svg>
+    <h2 id="final-title" class="h2 reveal">Next time you think “we’re out,” you won’t forget.</h2>
+    <p class="lead reveal">Free, and ready to use right away.</p>
+    <div class="reveal">
+      <a class="btn-store" href="https://apps.apple.com/app/id6792124859">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M12 8v6m-2.6-2.6L12 14l2.6-2.6"/></svg>
+        <span><small>Free on the</small>App Store</span>
+      </a>
+      <ul class="store-meta"><li>iPhone</li><li>iPad</li><li>Apple Watch</li><li>English &amp; Japanese</li></ul>
+    </div>
+
+    <div class="contact-card reveal" id="contact">
+      <div>
+        <h2>Contact</h2>
+        <p>Bug reports, requests, or questions—just email us. We reply in English and Japanese.</p>
+      </div>
+      <a class="mail" href="mailto:support@margheritaworks.com">support@margheritaworks.com</a>
+    </div>
+  </div>
+</section>
 
 </main>
 
-<footer>
-  <div>NeedSoon / ないかも</div>
-  <div style="margin-top:8px">
-    <a href="en.html">Help</a>·
-    <a href="index.html">日本語</a>·
-    <a href="privacy.html">Privacy Policy</a>·
-    <a href="mailto:support@margheritaworks.com">Contact</a>·
-    <a href="https://isitest1.github.io/portfolio-hub/en">Kohei Ishikawa's Portfolio</a>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="en.html"><img src="assets/img/icon-192.png" alt="" width="34" height="34" loading="lazy">NeedSoon<em lang="ja">ないかも</em></a>
+        <p>The shopping list you add to the moment you notice. No account needed.</p>
+      </div>
+      <div>
+        <h2>APP</h2>
+        <ul>
+          <li><a href="https://apps.apple.com/app/id6792124859">App Store</a></li>
+          <li><a href="#guide">Guide</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>SUPPORT</h2>
+        <ul>
+          <li><a href="privacy.html#en">Privacy Policy</a></li>
+          <li><a href="mailto:support@margheritaworks.com">Contact</a></li>
+          <li><a href="/" hreflang="ja" lang="ja">日本語</a></li>
+          <li><a href="https://isitest1.github.io/portfolio-hub/en">Kohei Ishikawa’s portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© <span data-year>2026</span> Margherita Works by Kohei Ishikawa. Apple, iPhone, iPad, Apple Watch, Siri, and Spotlight are trademarks of Apple Inc., registered in the U.S. and other countries and regions.</p>
   </div>
 </footer>
 
+<div class="dock" aria-label="Download">
+  <img src="assets/img/icon-192.png" alt="" width="42" height="42" loading="lazy">
+  <div><strong>NeedSoon</strong><span>Free · No account needed</span></div>
+  <a href="https://apps.apple.com/app/id6792124859">Get</a>
+</div>
+
+<script src="assets/js/site.js?v=4" defer></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "85229f57e1924945b88edb5f776541e0"}'></script>
 </body>
 </html>

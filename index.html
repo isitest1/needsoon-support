@@ -1,174 +1,592 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" class="no-js">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ないかも / NeedSoon — 使い方・サポート</title>
-<meta name="description" content="買い物メモアプリ「ないかも / NeedSoon」の使い方とサポート。気付いた瞬間に追加、音声・バーコード・写真での登録、QRだけの家族共有など。">
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>買い物リスト「ないかも」｜家族共有はQRだけ・アカウント不要の買い物メモアプリ</title>
+<meta name="description" content="「牛乳、ないかも」と気付いた瞬間に3秒で追加できるiPhoneの買い物リスト。家族共有はQRを見せるだけでアカウント登録不要。音声・バーコード・ラベル撮影・ウィジェット・Siri・Apple Watchから追加できます。無料。">
+<link rel="canonical" href="https://needsoon.margheritaworks.com/">
+<link rel="alternate" hreflang="ja" href="https://needsoon.margheritaworks.com/">
+<link rel="alternate" hreflang="en" href="https://needsoon.margheritaworks.com/en.html">
+<link rel="alternate" hreflang="x-default" href="https://needsoon.margheritaworks.com/en.html">
+<meta name="theme-color" content="#F5F0EA">
+<meta name="apple-itunes-app" content="app-id=6792124859">
+<meta name="format-detection" content="telephone=no">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ないかも / NeedSoon">
+<meta property="og:title" content="買い物リスト「ないかも」— 気付いた瞬間、3秒で追加。">
+<meta property="og:description" content="家族共有はQRを見せるだけ。アカウント登録不要の買い物メモ。音声・バーコード・ウィジェット・Siri・Apple Watchから追加できます。">
+<meta property="og:url" content="https://needsoon.margheritaworks.com/">
+<meta property="og:image" content="https://needsoon.margheritaworks.com/assets/img/og-ja.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ないかも — 気付いた瞬間、3秒で追加。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap">
+<link rel="preload" as="image" href="assets/img/ja-1-720.webp" type="image/webp">
+<link rel="stylesheet" href="assets/css/site.css?v=4">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://needsoon.margheritaworks.com/#org",
+      "name": "Margherita Works",
+      "email": "support@margheritaworks.com",
+      "founder": { "@type": "Person", "name": "Kohei Ishikawa" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://needsoon.margheritaworks.com/#website",
+      "url": "https://needsoon.margheritaworks.com/",
+      "name": "ないかも / NeedSoon",
+      "inLanguage": ["ja", "en"],
+      "publisher": { "@id": "https://needsoon.margheritaworks.com/#org" }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://needsoon.margheritaworks.com/#app",
+      "name": "ないかも",
+      "alternateName": ["NeedSoon", "買い物リスト ないかも"],
+      "description": "気付いた瞬間に3秒で追加できる買い物リスト。家族共有はQRを見せるだけでアカウント登録不要。音声・バーコード・ラベル撮影・ウィジェット・Siri・Apple Watchから追加できます。",
+      "operatingSystem": "iOS 18.0以降, iPadOS 18.0以降, watchOS",
+      "applicationCategory": "ShoppingApplication",
+      "inLanguage": ["ja", "en"],
+      "url": "https://needsoon.margheritaworks.com/",
+      "downloadUrl": "https://apps.apple.com/jp/app/id6792124859",
+      "installUrl": "https://apps.apple.com/jp/app/id6792124859",
+      "image": "https://needsoon.margheritaworks.com/assets/img/icon-512.png",
+      "screenshot": [
+        "https://needsoon.margheritaworks.com/assets/img/ja-1-720.webp",
+        "https://needsoon.margheritaworks.com/assets/img/ja-2-720.webp",
+        "https://needsoon.margheritaworks.com/assets/img/ja-5-720.webp"
+      ],
+      "featureList": "気付いた瞬間の素早い追加, 最近・よく使う項目の候補, 音声で複数項目を追加, バーコード読取り, 商品ラベル撮影による文字認識, ホーム画面・ロック画面ウィジェット, コントロールセンター, Siri, Apple Watch, アカウント不要のQR家族共有, 売り場順・店ごと・人ごとの並べ替え, オフライン対応",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
+      "publisher": { "@id": "https://needsoon.margheritaworks.com/#org" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://needsoon.margheritaworks.com/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "家族や夫婦で買い物リストを共有するのに、アカウント登録は必要ですか？", "acceptedAnswer": { "@type": "Answer", "text": "不要です。メールアドレスも登録しません。家族をつくるとQRコードが表示され、家族がそのQRを読み取るだけで同じ買い物リストを共有できます。" } },
+        { "@type": "Question", "name": "無料で使えますか？", "acceptedAnswer": { "@type": "Answer", "text": "はい。App Storeから無料でダウンロードして、すぐに使い始められます。" } },
+        { "@type": "Question", "name": "オフラインでも使えますか？", "acceptedAnswer": { "@type": "Answer", "text": "はい。追加・編集・チェックなどの基本操作はオフラインで動作します。家族共有の同期は、オンラインに戻ったときやアプリを開いたときに行われます。" } },
+        { "@type": "Question", "name": "Apple Watchで使えますか？", "acceptedAnswer": { "@type": "Answer", "text": "はい。Apple WatchアプリはiPhoneアプリに含まれています。Watchからリストの確認、音声やテキストでの追加、購入済みのチェックができます。" } },
+        { "@type": "Question", "name": "バーコードを読み取っても商品が見つからないときは？", "acceptedAnswer": { "@type": "Answer", "text": "商品名を手入力して、そのまま登録できます。店舗独自のコードなどは「見つかりません」と表示され、手入力に切り替わります。" } },
+        { "@type": "Question", "name": "データを削除するには？", "acceptedAnswer": { "@type": "Answer", "text": "各項目はアプリ内で削除できます。共有をやめるには家族画面から「家族から抜ける」を選びます。アプリを削除すると、その端末内のデータは削除されます。共有データの削除はお問い合わせください。" } }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
+<a class="skip" href="#main">本文へ移動</a>
 
 <header class="site-header">
-  <div class="inner">
-    <a class="brand" href="index.html">ないかも<span> / NeedSoon</span></a>
-    <nav class="nav">
-      <a href="index.html">使い方</a>
-      <a href="en.html">English</a>
-      <a href="privacy.html">プライバシー</a>
-      <a href="#contact">お問い合わせ</a>
+  <div class="wrap bar">
+    <a class="brand" href="/" aria-label="ないかも ホーム">
+      <img src="assets/img/icon-192.png" alt="" width="34" height="34">ないかも<em>NeedSoon</em>
+    </a>
+    <nav class="nav" aria-label="メイン">
+      <a href="#why">コンセプト</a>
+      <a href="#entries">追加のしかた</a>
+      <a href="#family">家族共有</a>
+      <a href="#guide">使い方</a>
+      <a href="#faq">よくある質問</a>
+      <a class="lang" href="en.html" hreflang="en" lang="en">EN</a>
+      <a class="nav-cta" href="https://apps.apple.com/jp/app/id6792124859">入手（無料）</a>
     </nav>
   </div>
 </header>
 
-<div class="hero">
-  <h1>気付いた瞬間に、追加。</h1>
-  <p>「ないかも」は、牛乳や洗剤が少ないと気付いたその場で、いちばん短い操作で登録できる買い物メモです。このページでは使い方を詳しく説明します。</p>
-  <p><a class="btn" href="https://apps.apple.com/jp/app/id6792124859">App Storeで見る ↗</a></p>
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow reveal">iPhone・iPad・Apple Watch の買い物リスト</p>
+      <h1 id="hero-title" class="display reveal" style="--d:.08s">
+        <span class="line"><span class="in-line">気付いた瞬間、</span></span>
+        <span class="line"><span class="in-line"><span class="mark">3秒で</span>追加。</span></span>
+      </h1>
+      <p class="lead reveal" style="--d:.16s">「牛乳、<span class="nowrap">ないかも」——</span>そう思ったその場で、いちばん短い操作で記録できる買い物メモです。家族とは<strong>QRを見せるだけ</strong>で共有。アカウント登録はいりません。</p>
+      <div class="reveal" style="--d:.24s">
+        <a class="btn-store" href="https://apps.apple.com/jp/app/id6792124859">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M12 8v6m-2.6-2.6L12 14l2.6-2.6"/></svg>
+          <span><small>App Storeで</small>無料ダウンロード</span>
+        </a>
+        <ul class="store-meta">
+          <li>アカウント登録不要</li>
+          <li>iOS 18以降</li>
+          <li>オフラインでも使える</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hero-stage" aria-hidden="true">
+      <svg class="bottle hero-bottle" viewBox="0 0 240 300">
+        <defs><clipPath id="clip-hero"><path d="M84 60V76Q84 90 72 96C50 108 44 126 44 150V252Q44 272 64 272H136Q156 272 156 252V150C156 126 150 108 128 96Q116 90 116 76V60Z"/></clipPath></defs>
+        <path d="M84 60V76Q84 90 72 96C50 108 44 126 44 150V252Q44 272 64 272H136Q156 272 156 252V150C156 126 150 108 128 96Q116 90 116 76V60Z" fill="#FBF8F4"/>
+        <g clip-path="url(#clip-hero)"><g class="liquid"><g class="wave"><path d="M-20 236q40-14 80 0t80 0 80 0 80 0 80 0V420H-20Z" fill="#5EC8C0"/></g></g></g>
+        <path d="M78 56V74Q78 84 68 90C44 104 36 124 36 150V252Q36 280 64 280H136Q164 280 164 252V150C164 124 156 104 132 90Q122 84 122 74V56" fill="none" stroke="#2D3B47" stroke-width="12" stroke-linejoin="round"/>
+        <rect x="66" y="24" width="68" height="36" rx="9" fill="#2D3B47"/>
+        <circle class="notice" cx="198" cy="40" r="20" fill="#E74C3C"/>
+        <g stroke="#2D3B47" stroke-width="9" stroke-linecap="round"><line class="ray" x1="182" y1="96" x2="208" y2="76"/><line class="ray" x1="186" y1="124" x2="216" y2="121"/><line class="ray" x1="182" y1="150" x2="208" y2="164"/></g>
+      </svg>
+      <div class="phone">
+        <img src="assets/img/ja-1-720.webp" srcset="assets/img/ja-1-420.webp 420w, assets/img/ja-1-720.webp 720w, assets/img/ja-1-1080.webp 1080w" sizes="(max-width: 520px) 58vw, 300px" width="720" height="1565" alt="">
+      </div>
+      <div class="toast">
+        <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+        「牛乳」を追加しました
+        <span class="undo">取り消す</span>
+      </div>
+      <div class="hero-steps"><span>気付く</span><span>追加する</span><span>終わる</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <ul><li>牛乳</li><li>卵</li><li>洗濯用洗剤</li><li>ティッシュ</li><li>トイレットペーパー</li><li>食パン</li><li>コーヒー</li><li>歯磨き粉</li><li>シャンプー</li><li>お米</li><li>納豆</li><li>バター</li></ul>
+    <ul><li>牛乳</li><li>卵</li><li>洗濯用洗剤</li><li>ティッシュ</li><li>トイレットペーパー</li><li>食パン</li><li>コーヒー</li><li>歯磨き粉</li><li>シャンプー</li><li>お米</li><li>納豆</li><li>バター</li></ul>
+  </div>
 </div>
 
-<main>
-
-  <section>
-    <h2>はじめに</h2>
-    <p class="lead">アプリは大きく「追加」画面と「リスト」画面の2つで構成されています。下のタブ、または画面の左右端からのスワイプで切り替えられます。</p>
-    <ul>
-      <li><strong>追加</strong>：思いついた商品をすぐに登録する画面（アプリを開くと最初に表示）。</li>
-      <li><strong>リスト</strong>：登録した買い物メモを見て、買ったらチェックする画面。</li>
-    </ul>
-  </section>
-
-  <section id="add">
-    <h2>1. 気付いたその場で追加</h2>
-    <div class="feature">
-      <div class="shot"><img src="img/ja-1.png" alt="ホーム画面"></div>
-      <div class="body">
-        <h3>入力欄と候補</h3>
-        <p>「追加」画面の入力欄に商品名を打つだけで登録できます。文字を入れると重複はまとめて知らせます。</p>
-        <ul>
-          <li><strong>最近追加したもの</strong>・<strong>よく使うもの</strong>をワンタップで再追加。</li>
-          <li>登録すると「〇〇を追加しました」と表示され、すぐ<strong>取り消し</strong>もできます。</li>
-        </ul>
+<!-- ============ WHY ============ -->
+<section class="section" id="why" aria-labelledby="why-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">コンセプト</p>
+      <h2 id="why-title" class="h2 reveal">買い忘れは、<br><span class="mark mark--amber">追加し忘れ</span>から。</h2>
+    </div>
+    <div class="insight-grid">
+      <p class="insight-quote reveal">問題は、スーパーではなく<br>家の中で起きています。</p>
+      <div class="insight-body reveal" style="--d:.1s">
+        <p>冷蔵庫を開けて「牛乳、もう少ないかも」。洗面所で「詰め替え、なかったかも」。その瞬間にメモしなければ、店に着くころには忘れています。</p>
+        <p>多くの買い物リストアプリは「買い物中」のために作られています。「ないかも」は違います。<strong>気付いた一瞬を逃さないこと</strong>だけを考えて、登録までの操作をできる限り削りました。</p>
       </div>
     </div>
-  </section>
-
-  <section id="voice">
-    <h2>2. 声・バーコード・写真で追加</h2>
-    <div class="feature reverse">
-      <div class="shot"><img src="img/ja-4.png" alt="音声・スキャン・撮影"></div>
-      <div class="body">
-        <h3>3つの入口</h3>
-        <ul>
-          <li><strong>音声入力</strong>：まとめて話すと項目に分割（例:「牛乳と卵」→ 2項目）。確認画面で不要分を外して追加。</li>
-          <li><strong>バーコード（スキャン）</strong>：JANコードを読み取り、商品名を自動入力。見つからない時は手入力に切り替え。</li>
-          <li><strong>商品を撮る</strong>：商品ラベルをカメラで撮ると、端末内で文字を読み取って候補を表示（通信不要）。</li>
-        </ul>
-        <p class="lead">カメラ・マイクの許可は、その機能を初めて使うときにだけ求めます。</p>
+    <div class="compare">
+      <div class="compare-col them reveal">
+        <h3>よくある買い物メモ <b>5</b></h3>
+        <ol><li>アプリを探して開く</li><li>リストを選ぶ</li><li>入力画面を開く</li><li>カテゴリや数量を入れる</li><li>保存して閉じる</li></ol>
+        <p class="foot">この間に、別の用事で忘れてしまう。</p>
+      </div>
+      <div class="compare-col us reveal" style="--d:.1s">
+        <h3>ないかも <b>1</b></h3>
+        <ol><li>開いた画面の入力欄に打つ／候補をタップ</li></ol>
+        <p class="foot">カテゴリも数量も不要。先に保存して、間違えたときだけ直せば十分です。ウィジェットやSiriからなら、アプリを開く必要もありません。</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="entries">
-    <h2>3. アプリを開かなくても追加</h2>
-    <div class="feature">
-      <div class="shot"><img src="img/ja-3.png" alt="ウィジェット・ロック画面・Apple Watch"></div>
-      <div class="body">
-        <h3>ホーム画面・ロック画面・Siri・Apple Watch</h3>
-        <ul>
-          <li><strong>ウィジェット</strong>：ホーム画面／ロック画面に置いて、音声・スキャン・商品カメラのボタンからすぐ起動。</li>
-          <li><strong>コントロールセンター</strong>からもワンタップで追加画面へ。</li>
-          <li><strong>Siri</strong>：「ないかもに追加」と話しかけると、聞き返しに答えるだけで登録。</li>
-          <li><strong>Apple Watch</strong>：iPhoneとペアリングした Watch で、音声／テキスト追加とチェックができます。</li>
-        </ul>
+<!-- ============ FLOW ============ -->
+<section class="flow" aria-labelledby="flow-title">
+  <div class="flow-sticky">
+    <div class="wrap flow-inner">
+      <h2 id="flow-title" class="sr-only">気付く、追加する、終わる。</h2>
+      <ol class="flow-words">
+        <li>気付く</li>
+        <li>追加する</li>
+        <li>終わる</li>
+      </ol>
+      <div class="flow-captions">
+        <figure>
+          <span class="num">01 — 気付く</span>
+          <p>なくなりそうなものに気付くのは、たいてい家の中。手を止めるのは、ほんの数秒だけで済むようにしました。</p>
+          <span class="chip"><i></i>牛乳、ないかも。</span>
+        </figure>
+        <figure>
+          <span class="num">02 — 追加する</span>
+          <p>アプリを開くと、最初の画面が入力欄。最近追加したものなら、ワンタップで再追加。声でもバーコードでも登録できます。</p>
+          <span class="chip"><i style="background:var(--teal)"></i>「牛乳」を追加しました</span>
+        </figure>
+        <figure>
+          <span class="num">03 — 終わる</span>
+          <p>確認画面は出しません。追加したら、すぐ元の行動へ。家族のリストにも、そのまま反映されます。</p>
+          <span class="chip"><i style="background:#fff"></i>あとは、買うだけ。</span>
+        </figure>
       </div>
     </div>
-  </section>
+    <div class="flow-progress" aria-hidden="true"><span></span></div>
+  </div>
+</section>
 
-  <section id="family">
-    <h2>4. 家族とQRで共有</h2>
-    <div class="feature reverse">
-      <div class="shot"><img src="img/ja-2.png" alt="家族共有はQRだけ"></div>
-      <div class="body">
-        <h3>アカウント登録なし・QRを見せるだけ</h3>
-        <p>同じ買い物メモを家族で共有できます。<strong>アカウント登録もメールアドレスも不要</strong>です。</p>
-        <ol style="margin-left:22px">
-          <li>「リスト」画面の<strong>左上の家族アイコン</strong>をタップ。</li>
-          <li><strong>家族をつくる</strong>とQRコードが表示されます。</li>
-          <li>もう一方の端末で同じ画面を開き、<strong>QRを読み取る</strong>と参加完了。</li>
-        </ol>
-        <ul>
-          <li>追加・購入はすぐ全員に反映されます（アプリを開いた時／引っ張って更新で同期）。</li>
-          <li>誰が追加して、誰が買ったかを<strong>名前と写真</strong>で表示。</li>
-          <li>家族の名前や、購入済みの自動削除日数は家族全員で共通になります。</li>
-        </ul>
-        <div class="callout">共有をやめたいときは、家族画面から「家族から抜ける」を選びます。抜けるとその端末はローカルのみに戻ります。</div>
+<!-- ============ DEMO ============ -->
+<section class="section demo-section" id="try" aria-labelledby="try-title">
+  <div class="wrap demo-grid">
+    <div>
+      <div class="section-head">
+        <p class="eyebrow reveal">試してみる</p>
+        <h2 id="try-title" class="h2 reveal">何秒で、<br>追加できますか？</h2>
+        <p class="lead reveal">右の画面は、アプリの「追加」画面をブラウザで再現したものです。商品名を入れるか、候補をタップしてみてください。音声ボタンでは「牛乳と卵」が2つの項目に分かれる様子を見られます。</p>
       </div>
     </div>
-  </section>
-
-  <section id="shopping">
-    <h2>5. 買い物中も迷わない</h2>
-    <div class="feature">
-      <div class="shot"><img src="img/ja-5.png" alt="リストの並べ替え"></div>
-      <div class="body">
-        <ul>
-          <li><strong>並べ替え</strong>：追加順／店内の売り場順／店ごと／人ごとに切り替え。</li>
-          <li><strong>チェック</strong>：買ったらワンタップ。間違えてもすぐ戻せます。</li>
-          <li><strong>店の設定</strong>：項目に購入予定の店を設定でき、まとめて設定も可能。</li>
-          <li>購入済みは自動で整理され、一定期間後に自動削除（日数は設定で変更）。</li>
-        </ul>
+    <div class="demo reveal" data-demo
+      data-toast="「{name}」を追加しました"
+      data-toast-many="{n}件を追加しました"
+      data-dup="「{name}」はもうリストにあります"
+      data-undone="取り消しました"
+      data-time="{s}秒で追加できました。"
+      data-time-tap="ワンタップで追加できました。"
+      data-split-msg="話した内容を{n}件に分けて追加しました。"
+      data-src-text="入力"
+      data-src-voice="音声"
+      data-listening="聞いています…"
+      data-voice-phrase="牛乳と卵"
+      data-split-re="と|、|,|\s+and\s+">
+      <p class="demo-title"><img src="assets/img/icon-192.png" alt="" width="36" height="36">なにがないですか？</p>
+      <form class="demo-form" autocomplete="off">
+        <label class="sr-only" for="demo-input">商品名を入力</label>
+        <input id="demo-input" type="text" placeholder="商品名を入力" maxlength="40" enterkeyhint="done">
+        <button type="submit">追加</button>
+      </form>
+      <div class="demo-actions">
+        <button type="button" class="demo-voice"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></svg><span>音声入力（デモ）</span></button>
+      </div>
+      <p class="demo-label">最近追加したもの</p>
+      <div class="demo-chips">
+        <button type="button" data-name="牛乳">牛乳</button>
+        <button type="button" data-name="卵">卵</button>
+        <button type="button" data-name="洗濯用洗剤">洗濯用洗剤</button>
+        <button type="button" data-name="ティッシュ">ティッシュ</button>
+        <button type="button" data-name="食パン">食パン</button>
+      </div>
+      <ul class="demo-list" aria-label="追加した項目"><li class="empty">まだ何もありません。</li></ul>
+      <p class="demo-timer"></p>
+      <p class="sr-only" aria-live="polite"></p>
+      <div class="toast demo-toast" role="status">
+        <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+        <span class="msg"></span>
+        <button type="button" class="undo">取り消す</button>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="settings">
-    <h2>6. 設定</h2>
-    <p class="lead">「リスト」画面の右上メニューから設定を開けます。</p>
-    <ul>
-      <li><strong>購入済みの自動削除</strong>：7〜90日／しない（既定90日。共有中は家族共通）。</li>
-      <li><strong>キャラクター</strong>：自分のアイコン（動物アバター／写真）と名前を設定。共有時に「誰が」に表示。</li>
-      <li>バージョン情報・このサポートページへのリンク。</li>
-    </ul>
-  </section>
-
-  <section id="faq">
-    <h2>よくある質問</h2>
-    <div class="faq">
-      <details><summary>共有にアカウント登録は必要ですか？</summary>
-        <p>不要です。メールアドレスも登録しません。家族はQRコードを読み取るだけで参加できます。仕組み上、ランダムな家族ID（QR）を知っている端末同士で買い物リストを同期します。</p></details>
-      <details><summary>オフラインでも使えますか？</summary>
-        <p>はい。項目の追加・編集・チェックなど基本操作はオフラインで動作します。共有の同期は、オンラインに戻った時やアプリを開いた時に行われます。</p></details>
-      <details><summary>商品が見つからない／バーコードが読めない</summary>
-        <p>商品情報が見つからない場合でも、商品名を手入力してそのまま登録できます。店舗独自コードなどJANとして検索できないコードは「見つかりません」と表示し、手入力に切り替わります。</p></details>
-      <details><summary>データを消したい</summary>
-        <p>各項目は左スワイプ等で削除できます。共有をやめる場合は家族画面から「家族から抜ける」を選びます。アプリを削除すると、その端末内のデータは削除されます。</p></details>
-      <details><summary>会社支給など制限のあるiPhoneで共有できない</summary>
-        <p>ネットワーク制限のある環境では同期に失敗することがあります。その場合でもローカルでの利用（追加・チェック）は可能です。改善しない場合はお問い合わせください。</p></details>
-      <details><summary>Apple Watch アプリは別に必要ですか？</summary>
-        <p>いいえ。iPhone アプリに含まれており、ペアリングした Apple Watch に自動で入ります。単体アプリの追加購入は不要です。</p></details>
+<!-- ============ ENTRIES ============ -->
+<section class="section" id="entries" aria-labelledby="entries-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">追加のしかた</p>
+      <h2 id="entries-title" class="h2 reveal">思いついた場所が、<br>そのまま入口に。</h2>
+      <p class="lead reveal">ホーム画面、ロック画面、手首の上。アプリを探して開かなくても、気付いたその場所から追加できます。</p>
     </div>
-  </section>
+    <div class="bento">
+      <article class="tile t-widget reveal">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2.5"/><rect x="13" y="3" width="8" height="8" rx="2.5"/><rect x="3" y="13" width="8" height="8" rx="2.5"/><rect x="13" y="13" width="8" height="8" rx="2.5"/></svg></span>
+        <h3 class="h3">ホーム画面ウィジェット</h3>
+        <p>残りの件数がひと目で分かり、音声・スキャン・商品カメラのボタンからすぐ追加を始められます。</p>
+        <div class="tile-media"><img src="assets/img/ja-3-720.webp" srcset="assets/img/ja-3-420.webp 420w, assets/img/ja-3-720.webp 720w, assets/img/ja-3-1080.webp 1080w" sizes="(max-width: 620px) 80vw, 340px" width="720" height="1565" loading="lazy" alt="iPhoneのホーム画面に置いた「ないかも」ウィジェット。未購入の件数と、音声・スキャン・商品カメラのボタンが並んでいる"></div>
+      </article>
+      <article class="tile ink t-watch reveal" style="--d:.06s">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="3.5"/><path d="M9 6l.6-3h4.8L15 6M9 18l.6 3h4.8L15 18"/></svg></span>
+        <h3 class="h3">Apple Watch</h3>
+        <p>手首に話しかけて追加。お店ではリストを見ながら、タップで購入済みに。iPhoneアプリに含まれているので、追加のインストールは不要です。</p>
+        <div class="watch"><img src="assets/img/ja-watch.webp" width="416" height="496" loading="lazy" alt="Apple Watchの「ないかも」。「話す／入力して追加」ボタンと、スーパーで買うもののリスト"></div>
+      </article>
+      <article class="tile teal t-voice reveal">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></svg></span>
+        <h3 class="h3">声でまとめて</h3>
+        <p>話した内容を項目ごとに分けて追加します。</p>
+        <div class="split-demo"><span class="say">「牛乳と卵」</span><span class="arrow">→</span><span class="item">牛乳</span><span class="item">卵</span></div>
+      </article>
+      <article class="tile t-scan reveal" style="--d:.06s">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16M8 9v6M11 9v6M14 9v6M17 9v6"/></svg></span>
+        <h3 class="h3">バーコード</h3>
+        <p>JANコードを読み取って商品名を自動入力。見つからなくても、そのまま手入力に切り替わります。</p>
+        <div class="code-demo" aria-hidden="true"><div class="bars"></div></div>
+      </article>
+      <article class="tile amber t-label reveal" style="--d:.12s">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h1.8l1.5-2h4.4l1.5 2h1.8A2.5 2.5 0 0 1 20 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5z"/><circle cx="12" cy="13" r="3.5"/></svg></span>
+        <h3 class="h3">ラベルを撮るだけ</h3>
+        <p>バーコードを捨ててしまっても大丈夫。商品ラベルを撮ると、端末内で文字を読み取って候補にします。通信は不要です。</p>
+      </article>
+      <article class="tile t-siri reveal">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 4v-4H6.5A2.5 2.5 0 0 1 4 13.5z"/></svg></span>
+        <h3 class="h3">Siri・Spotlight</h3>
+        <p>手がふさがっていても、話しかけるだけ。聞き返しに答えれば登録が終わります。</p>
+        <span class="siri-bubble">「Siri、ないかもに追加」</span>
+      </article>
+      <article class="tile t-lock reveal" style="--d:.06s">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2.5"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10"/></svg></span>
+        <h3 class="h3">ロック画面・コントロールセンター</h3>
+        <p>iPhoneのロックを解除する前から、ワンタップで追加画面へ。</p>
+        <div class="lock-row"><span>ロック画面ウィジェット</span><span>コントロールセンター</span><span>ショートカット</span></div>
+      </article>
+    </div>
+  </div>
+</section>
 
-  <section id="contact" class="contact">
-    <h2>お問い合わせ</h2>
-    <p>不具合のご報告・ご要望・ご質問は、以下のメールまでお気軽にどうぞ。日本語・英語で対応します。</p>
-    <p>✉️ <a href="mailto:support@margheritaworks.com">support@margheritaworks.com</a></p>
-  </section>
+<!-- ============ FAMILY ============ -->
+<section class="section family" id="family" aria-labelledby="family-title">
+  <div class="wrap family-grid">
+    <div>
+      <div class="section-head" style="margin-bottom:0">
+        <p class="eyebrow reveal">家族共有</p>
+        <h2 id="family-title" class="h2 reveal">家族共有は、<br><span style="color:var(--teal)">QRを見せるだけ。</span></h2>
+        <p class="lead reveal">アカウント登録も、メールアドレスも、招待メールもいりません。同じ画面を開いてQRを読み取れば、もう同じ買い物リストです。</p>
+      </div>
+      <ol class="steps">
+        <li class="reveal"><div><strong>家族をつくる</strong><span>リスト画面の左上、家族アイコンから。</span></div></li>
+        <li class="reveal" style="--d:.06s"><div><strong>QRを見せる</strong><span>表示されたQRコードを家族に見せます。</span></div></li>
+        <li class="reveal" style="--d:.12s"><div><strong>読み取って参加</strong><span>家族は同じ画面で「QRを読み取って参加」。これで完了です。</span></div></li>
+      </ol>
+      <ul class="pill-list reveal">
+        <li>追加も購入も全員に反映</li>
+        <li>誰が追加し、誰が買ったかを写真と名前で表示</li>
+        <li>重複して買う心配が減る</li>
+      </ul>
+      <p class="use-cases reveal">夫婦で、同棲中のふたりで、実家の買い出しを頼むときに。</p>
+    </div>
+    <div class="family-phones" aria-hidden="false">
+      <div class="phone reveal"><img src="assets/img/ja-2-720.webp" srcset="assets/img/ja-2-420.webp 420w, assets/img/ja-2-720.webp 720w, assets/img/ja-2-1080.webp 1080w" sizes="270px" width="720" height="1565" loading="lazy" alt="家族で共有の画面。家族名の下に、参加用のQRコードが表示されている"></div>
+      <div class="phone reveal" style="--d:.1s"><img src="assets/img/ja-5-720.webp" srcset="assets/img/ja-5-420.webp 420w, assets/img/ja-5-720.webp 720w, assets/img/ja-5-1080.webp 1080w" sizes="270px" width="720" height="1565" loading="lazy" alt="家族の買い物メモ。スーパー、ドラッグストアごとに項目が並び、それぞれ誰が追加したかが表示されている"></div>
+      <span class="qr-badge" aria-hidden="true">アカウント不要</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SHOP ============ -->
+<section class="section" id="shop" aria-labelledby="shop-title">
+  <div class="wrap shop-grid">
+    <div class="shop-phone phone reveal"><img src="assets/img/ja-6-720.webp" srcset="assets/img/ja-6-420.webp 420w, assets/img/ja-6-720.webp 720w, assets/img/ja-6-1080.webp 1080w" sizes="320px" width="720" height="1565" loading="lazy" alt="買い物中のリスト。購入済みの項目にはチェックが付き、打ち消し線で表示されている"></div>
+    <div>
+      <div class="section-head" style="margin-bottom:0">
+        <p class="eyebrow reveal">買い物中</p>
+        <h2 id="shop-title" class="h2 reveal">お店では、<br>迷わない。</h2>
+        <p class="lead reveal">片手で見て、片手でチェック。登録のときに分類しなくても、買い物のときに見やすく並びます。</p>
+      </div>
+      <ul class="feature-list">
+        <li class="reveal"><span class="k">01</span><div><strong>売り場順・店ごと・人ごとに並べ替え</strong><span>商品名から売り場のカテゴリを自動で推定。スーパー、ドラッグストアなど店ごとにもまとめられます。</span></div></li>
+        <li class="reveal"><span class="k">02</span><div><strong>ワンタップでチェック、すぐ戻せる</strong><span>間違えてチェックしても、もう一度タップすれば元どおり。</span></div></li>
+        <li class="reveal"><span class="k">03</span><div><strong>購入済みは自動で整理</strong><span>買ったものは下にまとまり、一定期間後に自動で消えます（日数は設定で変更可能）。</span></div></li>
+        <li class="reveal"><span class="k">04</span><div><strong>検索と、まとめて店の設定</strong><span>項目が増えても、検索ですぐ見つかります。</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIFFERENCES ============ -->
+<section class="section diff" id="difference" aria-labelledby="diff-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">ほかの買い物リストとの違い</p>
+      <h2 id="diff-title" class="h2 reveal">ほかの買い物リストと、<br>ここが違う。</h2>
+    </div>
+    <ol class="diff-list">
+      <li class="reveal"><span class="n">01</span><h3 class="h3">登録の速さを、何より優先</h3><p>アプリを開いた最初の画面が入力欄。カテゴリ・数量・店舗の入力は必須にせず、保存前の確認画面も出しません。</p></li>
+      <li class="reveal"><span class="n">02</span><h3 class="h3">アカウント不要の家族共有</h3><p>IDもパスワードもメールアドレスも不要。QRコードだけで共有でき、使わない人はこれまでどおり端末内だけで使えます。</p></li>
+      <li class="reveal"><span class="n">03</span><h3 class="h3">アプリを開かなくても追加できる</h3><p>ウィジェット、ロック画面、コントロールセンター、Siri、Spotlight、Apple Watch。入口の多さが、追加し忘れを減らします。</p></li>
+      <li class="reveal"><span class="n">04</span><h3 class="h3">声・バーコード・ラベル撮影</h3><p>「牛乳と卵」は2つの項目に。バーコードから商品名を自動入力。バーコードがなくてもラベルを撮れば、端末内で文字を読み取ります。</p></li>
+      <li class="reveal"><span class="n">05</span><h3 class="h3">オフラインでも、静かに動く</h3><p>通信できなくても追加とチェックができます。共有を使わなければデータは端末内だけ。トラッキングは行いません。</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ PRIVACY PLEDGE ============ -->
+<section class="section" id="privacy" aria-labelledby="privacy-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">安心して使える</p>
+      <h2 id="privacy-title" class="h2 reveal">買い物メモに、<br>余計な情報はいらない。</h2>
+    </div>
+    <div class="pledge">
+      <div class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/><path d="M3 3l18 18" stroke-linecap="round"/></svg><strong>アカウント登録なし</strong><p>名前もメールアドレスも登録せずに、すべての機能を使えます。</p></div>
+      <div class="reveal" style="--d:.06s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10 18h4"/></svg><strong>共有しなければ端末内だけ</strong><p>家族共有を使わない限り、リストが外部へ送られることはありません。</p></div>
+      <div class="reveal" style="--d:.12s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/><path d="M3 3l18 18"/></svg><strong>トラッキングなし</strong><p>広告や行動追跡のためのSDKを組み込んでいません。</p></div>
+      <div class="reveal" style="--d:.18s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h1.8l1.5-2h4.4l1.5 2h1.8A2.5 2.5 0 0 1 20 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5z"/><circle cx="12" cy="13" r="3.5"/></svg><strong>権限は使うときだけ</strong><p>カメラやマイクは、その機能を選んだときに初めて許可を求めます。</p></div>
+    </div>
+    <p class="reveal" style="margin-top:28px;color:var(--muted);font-size:15px">詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+  </div>
+</section>
+
+<!-- ============ GUIDE ============ -->
+<section class="section" id="guide" aria-labelledby="guide-title" style="padding-top:0">
+  <div class="wrap guide">
+    <div class="guide-aside">
+      <p class="eyebrow reveal">使い方・サポート</p>
+      <h2 id="guide-title" class="h2 reveal" style="margin-top:20px">使い方ガイド</h2>
+      <p class="lead reveal" style="margin-top:18px">アプリは「追加」と「リスト」の2画面だけ。下のタブ、または画面の左右端からのスワイプで切り替えます。</p>
+    </div>
+    <div>
+      <details class="acc" open>
+        <summary>項目を追加する</summary>
+        <div class="acc-body">
+          <p>アプリを開くと最初に表示される「追加」画面の入力欄に、商品名を入れるだけで登録できます。</p>
+          <ul>
+            <li><strong>最近追加したもの・よく使うもの</strong>は、ワンタップで再追加できます。</li>
+            <li>登録すると「〇〇を追加しました」と表示され、すぐに<strong>取り消す</strong>こともできます。</li>
+            <li>同じ項目がすでにリストにある場合は、重複せずにお知らせします。</li>
+            <li>項目をタップすると、名前・数量・備考・購入予定の店を編集できます。</li>
+          </ul>
+        </div>
+      </details>
+      <details class="acc">
+        <summary>声・バーコード・ラベル撮影で追加する</summary>
+        <div class="acc-body">
+          <ul>
+            <li><strong>音声入力</strong>：まとめて話すと項目ごとに分かれます（例：「牛乳と卵」→ 2項目）。確認画面で不要なものを外して追加します。</li>
+            <li><strong>スキャン</strong>：JANコードを読み取り、商品名を自動入力します。見つからないときは手入力に切り替わります。</li>
+            <li><strong>商品を撮る</strong>：商品ラベルを撮ると、端末内で文字を読み取って候補を表示します（通信不要）。</li>
+          </ul>
+          <p>カメラ・マイクの許可は、その機能を初めて使うときにだけ求めます。許可しなくても、手入力ですべての基本機能を使えます。</p>
+        </div>
+      </details>
+      <details class="acc">
+        <summary>ウィジェット・Siri・Apple Watch から追加する</summary>
+        <div class="acc-body">
+          <ul>
+            <li><strong>ウィジェット</strong>：ホーム画面またはロック画面を長押しして「ないかも」を追加します。音声・スキャン・商品カメラのボタンからすぐ起動できます。</li>
+            <li><strong>コントロールセンター</strong>：コントロールを追加すると、ワンタップで追加画面を開けます。</li>
+            <li><strong>Siri</strong>：「ないかもに追加」と話しかけ、聞き返しに答えるだけで登録できます。</li>
+            <li><strong>Apple Watch</strong>：ペアリングしたWatchに自動で入ります。音声またはテキストで追加し、リストを見ながらチェックできます。</li>
+          </ul>
+        </div>
+      </details>
+      <details class="acc">
+        <summary>家族と共有する／共有をやめる</summary>
+        <div class="acc-body">
+          <ol>
+            <li>「リスト」画面の<strong>左上の家族アイコン</strong>をタップします。</li>
+            <li><strong>家族をつくる</strong>と、QRコードが表示されます。</li>
+            <li>もう一方の端末で同じ画面を開き、<strong>QRを読み取って参加</strong>を選ぶと完了です。</li>
+          </ol>
+          <p>同期はアプリを開いたとき、リストを引っ張って更新したとき、変更したときに行われます。家族の名前や購入済みの自動削除日数は、家族全員で共通です。</p>
+          <p>共有をやめるときは、家族画面から「家族から抜ける」を選びます。その端末は端末内だけの利用に戻ります。QRコードは信頼できる相手にだけ見せてください。</p>
+        </div>
+      </details>
+      <details class="acc">
+        <summary>買い物中に使う</summary>
+        <div class="acc-body">
+          <ul>
+            <li><strong>並べ替え</strong>：追加順・売り場順・店ごと・人ごとに切り替えられます。</li>
+            <li><strong>チェック</strong>：買ったらワンタップ。間違えてもすぐ戻せます。</li>
+            <li><strong>店の設定</strong>：項目ごとに購入予定の店を設定でき、まとめて設定することもできます。</li>
+          </ul>
+        </div>
+      </details>
+      <details class="acc">
+        <summary>設定（自動削除・キャラクター）</summary>
+        <div class="acc-body">
+          <ul>
+            <li><strong>購入済みの自動削除</strong>：7〜90日、または「しない」から選べます（既定は90日。共有中は家族共通）。</li>
+            <li><strong>キャラクター</strong>：自分のアイコン（動物アバターまたは写真）と名前を設定します。共有時に「誰が追加したか」に表示されます。</li>
+            <li>設定は「リスト」画面右上のメニューから開けます。</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq" aria-labelledby="faq-title" style="padding-top:0">
+  <div class="wrap guide">
+    <div class="guide-aside">
+      <p class="eyebrow reveal">FAQ</p>
+      <h2 id="faq-title" class="h2 reveal" style="margin-top:20px">よくある質問</h2>
+    </div>
+    <div>
+      <details class="acc"><summary>家族や夫婦で共有するのに、アカウント登録は必要ですか？</summary><div class="acc-body"><p>不要です。メールアドレスも登録しません。家族をつくるとQRコードが表示され、家族がそのQRを読み取るだけで同じ買い物リストを共有できます。仕組み上、ランダムな家族ID（QR）を知っている端末同士でリストを同期します。</p></div></details>
+      <details class="acc"><summary>無料で使えますか？</summary><div class="acc-body"><p>はい。App Storeから無料でダウンロードして、すぐに使い始められます。</p></div></details>
+      <details class="acc"><summary>オフラインでも使えますか？</summary><div class="acc-body"><p>はい。追加・編集・チェックなどの基本操作はオフラインで動作します。家族共有の同期は、オンラインに戻ったときやアプリを開いたときに行われます。</p></div></details>
+      <details class="acc"><summary>Apple Watch アプリは別に必要ですか？</summary><div class="acc-body"><p>いいえ。iPhoneアプリに含まれており、ペアリングしたApple Watchに自動で入ります。Watchからリストの確認、音声やテキストでの追加、購入済みのチェックができます。</p></div></details>
+      <details class="acc"><summary>バーコードを読み取っても商品が見つかりません</summary><div class="acc-body"><p>商品名を手入力して、そのまま登録できます。店舗独自のコードなど、JANとして検索できないコードは「見つかりません」と表示し、手入力に切り替わります。バーコードがない商品は、ラベル撮影や音声でも追加できます。</p></div></details>
+      <details class="acc"><summary>会社支給など、制限のあるiPhoneで共有できません</summary><div class="acc-body"><p>ネットワークに制限のある環境では、同期に失敗することがあります。その場合でも、端末内での追加・チェックは利用できます。改善しない場合はお問い合わせください。</p></div></details>
+      <details class="acc"><summary>データを削除するには？</summary><div class="acc-body"><p>各項目はアプリ内で削除できます。共有をやめるには家族画面から「家族から抜ける」を選びます。アプリを削除すると、その端末内のデータは削除されます。共有データの削除をご希望の場合は、下記までご連絡ください。</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA + CONTACT ============ -->
+<section class="section final" id="download" aria-labelledby="final-title">
+  <div class="wrap">
+    <svg class="bottle final-bottle noticed reveal" viewBox="0 0 240 300" aria-hidden="true">
+      <defs><clipPath id="clip-final"><path d="M84 60V76Q84 90 72 96C50 108 44 126 44 150V252Q44 272 64 272H136Q156 272 156 252V150C156 126 150 108 128 96Q116 90 116 76V60Z"/></clipPath></defs>
+      <path d="M84 60V76Q84 90 72 96C50 108 44 126 44 150V252Q44 272 64 272H136Q156 272 156 252V150C156 126 150 108 128 96Q116 90 116 76V60Z" fill="#FBF8F4"/>
+      <g clip-path="url(#clip-final)"><g class="wave"><path d="M-20 236q40-14 80 0t80 0 80 0 80 0 80 0V420H-20Z" fill="#2D3B47" opacity=".9"/></g></g>
+      <path d="M78 56V74Q78 84 68 90C44 104 36 124 36 150V252Q36 280 64 280H136Q164 280 164 252V150C164 124 156 104 132 90Q122 84 122 74V56" fill="none" stroke="#1F2A33" stroke-width="12" stroke-linejoin="round"/>
+      <rect x="66" y="24" width="68" height="36" rx="9" fill="#1F2A33"/>
+      <circle class="notice" cx="198" cy="40" r="20" fill="#E74C3C"/>
+      <g stroke="#1F2A33" stroke-width="9" stroke-linecap="round"><line class="ray" x1="182" y1="96" x2="208" y2="76"/><line class="ray" x1="186" y1="124" x2="216" y2="121"/><line class="ray" x1="182" y1="150" x2="208" y2="164"/></g>
+    </svg>
+    <h2 id="final-title" class="h2 reveal">次に「ないかも」と思ったら、<br>もう忘れない。</h2>
+    <p class="lead reveal">無料で、すぐに使い始められます。</p>
+    <div class="reveal">
+      <a class="btn-store" href="https://apps.apple.com/jp/app/id6792124859">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M12 8v6m-2.6-2.6L12 14l2.6-2.6"/></svg>
+        <span><small>App Storeで</small>無料ダウンロード</span>
+      </a>
+      <ul class="store-meta"><li>iPhone</li><li>iPad</li><li>Apple Watch</li><li>日本語・English</li></ul>
+    </div>
+
+    <div class="contact-card reveal" id="contact">
+      <div>
+        <h2>お問い合わせ</h2>
+        <p>不具合のご報告、ご要望、ご質問はメールでお気軽にどうぞ。日本語・英語で対応します。</p>
+      </div>
+      <a class="mail" href="mailto:support@margheritaworks.com">support@margheritaworks.com</a>
+    </div>
+  </div>
+</section>
 
 </main>
 
-<footer>
-  <div>ないかも / NeedSoon</div>
-  <div style="margin-top:8px">
-    <a href="index.html">使い方</a>·
-    <a href="en.html">English</a>·
-    <a href="privacy.html">プライバシーポリシー</a>·
-    <a href="mailto:support@margheritaworks.com">お問い合わせ</a>·
-    <a href="https://isitest1.github.io/portfolio-hub/ja">Kohei Ishikawa のポートフォリオ</a>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/"><img src="assets/img/icon-192.png" alt="" width="34" height="34" loading="lazy">ないかも<em>NeedSoon</em></a>
+        <p>気付いた瞬間に追加できる、アカウント不要の買い物リスト。</p>
+      </div>
+      <div>
+        <h2>アプリ</h2>
+        <ul>
+          <li><a href="https://apps.apple.com/jp/app/id6792124859">App Store</a></li>
+          <li><a href="#guide">使い方ガイド</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サポート</h2>
+        <ul>
+          <li><a href="privacy.html">プライバシーポリシー</a></li>
+          <li><a href="mailto:support@margheritaworks.com">お問い合わせ</a></li>
+          <li><a href="en.html" hreflang="en" lang="en">English</a></li>
+          <li><a href="https://isitest1.github.io/portfolio-hub/ja">Kohei Ishikawa のポートフォリオ</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© <span data-year>2026</span> Margherita Works by Kohei Ishikawa. Apple、iPhone、iPad、Apple Watch、Siri、Spotlightは、米国およびその他の国で登録されたApple Inc.の商標です。</p>
   </div>
 </footer>
 
+<div class="dock" aria-label="ダウンロード">
+  <img src="assets/img/icon-192.png" alt="" width="42" height="42" loading="lazy">
+  <div><strong>ないかも</strong><span>無料・アカウント登録不要</span></div>
+  <a href="https://apps.apple.com/jp/app/id6792124859">入手</a>
+</div>
+
+<script src="assets/js/site.js?v=4" defer></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "85229f57e1924945b88edb5f776541e0"}'></script>
 </body>
 </html>
