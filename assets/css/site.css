@@ -578,3 +578,11 @@ body::before {
 @media (max-width: 380px) { .contact-card a.mail { font-size: 14.5px; padding: 13px 16px; } }
 .hero-bottle { z-index: 2; }
 @media (min-width: 901px) and (max-width: 1180px) { .hero-bottle { width: 36%; left: -6%; } }
+
+/* iPad tile */
+.t-ipad { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr); gap: clamp(20px, 4vw, 56px); align-items: center; padding-bottom: 0; min-height: 0; }
+.t-ipad > div:first-child { display: flex; flex-direction: column; gap: 10px; padding-bottom: clamp(22px, 2.4vw, 32px); }
+.ipad { align-self: end; padding: 12px 12px 0; border-radius: 30px 30px 0 0; background: linear-gradient(145deg, #3a4651, #1b232a 60%); box-shadow: 0 -10px 40px -18px rgba(31,42,51,.4); }
+.ipad img { width: 100%; border-radius: 20px 20px 0 0; }
+@media (max-width: 980px) { .t-ipad { grid-column: 1 / -1; } }
+@media (max-width: 620px) { .t-ipad { grid-template-columns: minmax(0, 1fr); } .t-ipad > div:first-child { padding-bottom: 0; } .ipad { padding: 8px 8px 0; border-radius: 22px 22px 0 0; } .ipad img { border-radius: 15px 15px 0 0; } }
